@@ -19,7 +19,9 @@ For example given the following config:
 the setting Main.Volume will result in the topic "NAD/T757/Receiver/Master/Volume"
 
 The bridge listens to the topic
+
     NAD/\<deviceType\>/\<deviceName\>/Commands
+    
 for updates to the receiver. So given the config above the following message sets the volume to -50dB:
 
     NAD/T757/Receiver/Commands/Master/Volume -50
