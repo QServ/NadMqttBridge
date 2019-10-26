@@ -2,13 +2,14 @@
 This is a simple service that connects to the NAD serial port and sends received data to a MQTT broker.
 It also subscribes to a command topic from the MQTT broker and sets the corresponding valur on the NAS through the serial port.
 
+To start the service manually run the command:
 
-To start the service manually the command
-
+    python3 NadMqttBridge.py <connfig file name>  <log file name>
 
 The bridge publis the NAD settings to the MQTT broker on the format:  "NAD/<deviceType>/<deviceName>/<nad setting same>"
 The deviceType and deviceName is set in the configuration file and the nad setting name is the name that can be found in the documentation for the given setting. Any dots in the settiong name will be replaced with a slash in the MQTT topic.
 For example given the following config:
+    
     deviceType=T757
     deviceName=Receiver
 
