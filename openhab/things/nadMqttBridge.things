@@ -1,0 +1,32 @@
+Bridge mqtt:broker:nadBroker [ host="192.168.0.95", secure="false" ] {
+    Thing topic NadT757 "NAD T757 receiver" {
+        Channels:
+            Type switch : power "Power on/off switch"
+                [
+                    stateTopic="NAD/T757/Receiver/Main/Power",
+                    commandTopic="NAD/T757/Receiver/Commands/Main/Power",
+                    formatBeforePublish="%s",
+                    on="On", off="Off"
+                ]
+            Type switch : mute "Mute switch"
+                [
+                    stateTopic="NAD/T757/Receiver/Main/Mute",
+                    commandTopic="NAD/T757/Receiver/Commands/Main/Mute",
+                    formatBeforePublish="%s",
+                    on="On", off="Off"
+                ]
+            Type number : volume "Volume"
+                [
+                    stateTopic="NAD/T757/Receiver/Main/Volume",
+                    commandTopic="NAD/T757/Receiver/Commands/Main/Volume",
+                    formatBeforePublish="%s",
+                    min=-99, max=0, step=1
+                 ]
+            Type number : source "Source"
+                [
+                    stateTopic="NAD/T757/Receiver/Main/Source",
+                    commandTopic="NAD/T757/Receiver/Commands/Main/Source",
+                    formatBeforePublish="%s"
+         ]
+    }
+}

@@ -1,0 +1,4 @@
+Switch nadPower "Nad power" (bio_controls) ["Switchable"] { channel="mqtt:topic:nadBroker:NadT757:power" }
+Switch nadMute "Nad Mute" (bio_controls) ["Switchable"] { channel="mqtt:topic:nadBroker:NadT757:mute" }
+Number nadVolume "Volume [%ddB]" { channel="mqtt:topic:nadBroker:NadT757:volume" }
+Number nadSource "Source" { channel="mqtt:topic:nadBroker:NadT757:source" }

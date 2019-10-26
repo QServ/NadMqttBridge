@@ -1,0 +1,7 @@
+Frame label="Förstärkare Nad T757" icon="video"{
+      Selection item=nadSource icon="source" mappings=[1="Xbmc", 2="AppleTv", 3="Wii", 4="PS4", 6="Skivspelare", 7="Chromecast"]
+      Setpoint item=nadVolume icon="soundvolume" minValue=-99.0 maxValue=0 step=1 visibility=[nadMute==OFF]
+      Setpoint item=nadVolume icon="soundvolume_mute" minValue=-99.0 maxValue=0 step=1 visibility=[nadMute==ON]
+      Switch item=nadMute icon=""
+      Switch item=nadPower icon="power"
+ }
