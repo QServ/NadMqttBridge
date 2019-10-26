@@ -16,7 +16,9 @@ For example given the following config:
     deviceType=T757
     deviceName=Receiver
 
-the setting Main.Volume will result in the topic "NAD/T757/Receiver/Master/Volume"
+the setting Main.Volume will result in the topic
+
+    NAD/T757/Receiver/Master/Volume
 
 The bridge listens to the topic
 
