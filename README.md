@@ -29,18 +29,18 @@ The commands/settings names and legal values can be found in the NAD command doc
 
 ##Configuration
 
-| name           | description                                                              |
-|----------------|--------------------------------------------------------------------------|
-| serialPort     | The serial port that the NAD receiver is connected to.                   |
-| serialSpeed    | The baud rate to use when connecting to the NAD receiver. Usually 115200 |
-| mqttBroker     | The hostname or ip of the MQTT broker to be used.                        |
-| mqttPort       | The port used by the MQTT broker                                         |
-| deviceType     | The model of the NAD receiver. Right now it only impacts the MQTT topic. |
-| deviceName     | The name of the NAD receiver. Right now it only impacts the MQTT topic.  |
-| logLevel       | The log level used when loggin to the log file.                          |
+| name           | description                                                                |
+|----------------|----------------------------------------------------------------------------|
+| serialPort     | The serial port that the NAD receiver is connected to.                     |
+| serialSpeed    | The baud rate to use when connecting to the NAD receiver. Usually 115200   |
+| mqttBroker     | The hostname or ip of the MQTT broker to be used.                          |
+| mqttPort       | The port used by the MQTT broker                                           |
+| deviceType     | The model of the NAD receiver. Right now it´s only used in the MQTT topic. |
+| deviceName     | The name of the NAD receiver. Right now it´s only used in the MQTT topic.  |
+| logLevel       | The log level used when loggin to the log file.                            |
 
 ##Service
 There is an example service definition to run this python service as a systemd service and it can be found in the service directory [here](service/nadMqttBridge.service).
 
 ## Known issues
-The bridge doesn not support secure connections to the MQTT broker.
+The bridge doesn´t support secure connections to the MQTT broker.
