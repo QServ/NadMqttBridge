@@ -39,7 +39,7 @@ The commands/settings names and legal values can be found in the NAD command doc
 | deviceName     | The name of the NAD receiver. Right now it´s only used in the MQTT topic.  |
 | logLevel       | The log level used when loggin to the log file.                            |
 
-##Service
+## Service
 There is an example service definition to run this python service as a systemd service and it can be found in the service directory [here](service/nadMqttBridge.service).
 
 ## Known issues
