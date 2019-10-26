@@ -6,7 +6,7 @@ To start the service manually run the command:
 
     python3 NadMqttBridge.py <connfig file name>  <log file name>
 
-The bridge publis the NAD settings to the MQTT broker on the format:  "NAD/<deviceType>/<deviceName>/<nad setting same>"
+The bridge publish the NAD settings to the MQTT broker on the format:  "NAD/\<deviceType\>/\<deviceName\>/\<nad setting same\>"
 The deviceType and deviceName is set in the configuration file and the nad setting name is the name that can be found in the documentation for the given setting. Any dots in the settiong name will be replaced with a slash in the MQTT topic.
 For example given the following config:
     
