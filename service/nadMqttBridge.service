@@ -1,0 +1,15 @@
+[Unit]
+Description=Start and stops the NAD mqtt bridge
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=openhab
+Group=openhab
+WorkingDirectory=/services
+ExecStart=/usr/bin/python3 NadMqttBridge.py nadMqttBridge.ini nadMqttBridge.log
+# Shutdown delay in seconds, before process is tried to be killed with KILL (if configured)
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
