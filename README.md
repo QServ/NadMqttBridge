@@ -31,7 +31,7 @@ for updates to the receiver. So given the config above the following message set
 
 The commands/settings names and legal values can be found in the NAD command documentation. The ones I have found can be found under "NAD Integration Protocol Documentation" on [NADs web site](https://nadelectronics.com/software/)
 
-##Configuration
+## Configuration
 
 | name           | description                                                                |
 |----------------|----------------------------------------------------------------------------|
